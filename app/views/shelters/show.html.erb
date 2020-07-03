@@ -1,7 +1,8 @@
-<h1>All Shelters</h1>
-
-  <h2><%= @shelter.name %></h2>
+<h2> Name: <%= @shelter.name %></h2>
   <p> Address: <%= @shelter.address %></p>
   <p> City: <%= @shelter.city %></p>
   <p> State: <%= @shelter.state %></p>
   <p> Zip: <%= @shelter.zip %></p>
+
+<%= link_to "Update Shelter", "/shelters/#{@shelter.id}/edit" %>
+<%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", method: "delete" %>
