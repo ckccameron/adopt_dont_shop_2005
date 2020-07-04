@@ -18,12 +18,12 @@ RSpec.describe "pets index page" do
 
     visit "/pets"
 
-    expect(page.find("img#pet-image-#{pet_1.id}")).to_be_truthy
+    expect(page.find("img#pet-image-#{pet_1.id}"))
     expect(page).to have_content(pet_1.name)
     expect(page).to have_content(pet_1.approximate_age)
     expect(page).to have_content(pet_1.sex)
     expect(page).to have_content("Shelter: #{shelter_2.name}")
-    expect(page.find("img#pet-image-#{pet_2.id}")).to_be_truthy
+    expect(page.find("img#pet-image-#{pet_2.id}"))
     expect(page).to have_content(pet_2.name)
     expect(page).to have_content(pet_2.approximate_age)
     expect(page).to have_content(pet_2.sex)
