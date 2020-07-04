@@ -13,3 +13,9 @@ Shelter.create(name: "MaxFund Animal Adoption Center", address: "1005 Galapago S
 Shelter.create(name: "Colorado Puppy Rescue", address: "10021 E Iliff Ave", city: "Aurora", state: "CO", zip: "80247")
 
 Shelter.create(name: "PawsCo Headquarters", address: "8200 E Pacific Pl", city: "Denver", state: "CO", zip: "80231")
+
+Pet.create(image: "https://images.app.goo.gl/781WD1vckvbeUfNy5", name: "Chappelle", approximate_age: "2 years old", sex: "Male", shelter_id: 2)
+
+Pet.create(image: "https://images.app.goo.gl/MXQi3ZwYfDMHYEyTA", name: "Rose", approximate_age: "2 months old" , sex: "Female", shelter_id: 3)
+
+Pet.create(image: "https://images.app.goo.gl/7nE56Mi1hyuh52W87", name: "Colombiana", approximate_age: "4 months old" , sex: "Female", shelter_id: 4)
