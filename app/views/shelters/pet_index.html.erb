@@ -5,11 +5,17 @@
   <% @pets.each do |pet| %>
     <% if pet.shelter_id == @shelter.id %>
       <%= image_tag(pet.image, id: "pet-image-#{pet.id}") %>
+      <br>
       <%= pet.name %>
+      <br>
       <%= pet.description %>
+      <br>
       <%= pet.approximate_age %>
+      <br>
       <%= pet.sex %>
+      <br>
       <%= "Shelter: #{pet.shelter.name}" %>
+      <p><%= link_to "Edit Pet", "/pets/#{pet.id}/edit" %></p>
     <% else %>
     <% end %>
     <br>
