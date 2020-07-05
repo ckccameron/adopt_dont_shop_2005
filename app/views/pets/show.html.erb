@@ -7,3 +7,4 @@
  <p>Available for Adoption?: <%= @pet.available_for_adoption %></p>
  <p>Come today and adopt from: <%= @pet.shelter.name %></p>
  <%= link_to "Update Pet", "/pets/#{@pet.id}/edit", method: "get" %>
+ <%= link_to "Delete Pet", "/pets/#{@pet.id}", method: "delete" %>
