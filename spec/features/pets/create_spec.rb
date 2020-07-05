@@ -4,7 +4,7 @@ RSpec.describe "pet create page" do
   it "can allow user to create a new pet for adoption" do
     shelter_2 = Shelter.create(name: "MaxFund Animal Adoption Center")
 
-    pet_1 = Pet.create(image: "https://images.app.goo.gl/781WD1vckvbeUfNy5",
+    pet_1 = Pet.create(image: "https://animalbehaviourbusiness.com/wp-content/uploads/2018/02/smiling-pitbull-2.png",
                       name: "Chappelle",
                       approximate_age: "2 years old",
                       sex: "Male",
@@ -20,7 +20,7 @@ RSpec.describe "pet create page" do
     expect(current_path).to eq "/shelters/#{shelter_2.id}/pets/new"
     expect(page).to have_content("Create A New Pet For Adoption")
 
-    fill_in :image, with: "https://images.app.goo.gl/N1njZvNS7kjQefWS6"
+    fill_in :image, with: "https://i.pinimg.com/236x/d3/d2/f7/d3d2f7227d67ab31c38f2c5cabde55bd.jpg"
     fill_in :name, with: "Guapo"
     fill_in :approximate_age, with: "9 months old"
     fill_in :sex, with: "Male"

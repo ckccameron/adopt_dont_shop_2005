@@ -4,7 +4,7 @@ RSpec.describe "pet show page" do
   it "allows user to see a pet's image, name, description, approximate age, sex and adoption status" do
     shelter_2 = Shelter.create(name: "MaxFund Animal Adoption Center")
 
-    pet_1 = Pet.create(image: "https://images.app.goo.gl/781WD1vckvbeUfNy5",
+    pet_1 = Pet.create(image: "https://animalbehaviourbusiness.com/wp-content/uploads/2018/02/smiling-pitbull-2.png",
                       name: "Chappelle",
                       approximate_age: "2 years old",
                       sex: "Male",
