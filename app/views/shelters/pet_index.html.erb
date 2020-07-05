@@ -12,6 +12,6 @@
     <% else %>
     <% end %>
     <br>
-    <%= link_to "Create Pet", "/shelters/#{pet.shelter.id}/pets/new" %>
+    <%= link_to "Create Pet", "/shelters/#{pet.shelter.id}/pets/new", method: "get", action: "new" %>
   <% end %>
 </ul>
