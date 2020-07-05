@@ -6,6 +6,7 @@
     <% if pet.shelter_id == @shelter.id %>
       <%= image_tag(pet.image, id: "pet-image-#{pet.id}") %>
       <%= pet.name %>
+      <%= pet.description %>
       <%= pet.approximate_age %>
       <%= pet.sex %>
       <%= "Shelter: #{pet.shelter.name}" %>
