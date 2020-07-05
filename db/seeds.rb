@@ -14,8 +14,10 @@ Shelter.create(name: "Colorado Puppy Rescue", address: "10021 E Iliff Ave", city
 
 Shelter.create(name: "PawsCo Headquarters", address: "8200 E Pacific Pl", city: "Denver", state: "CO", zip: "80231")
 
-Pet.create(image: "https://images.app.goo.gl/781WD1vckvbeUfNy5", name: "Chappelle", approximate_age: "2 years old", sex: "Male", shelter_id: 2, description: "Pitbull", available_for_adoption: "Yes")
+Pet.create(image: "https://animalbehaviourbusiness.com/wp-content/uploads/2018/02/smiling-pitbull-2.png", name: "Chappelle", approximate_age: "2 years old", sex: "Male", shelter_id: 2, description: "Pitbull", available_for_adoption: "Yes")
 
-Pet.create(image: "https://images.app.goo.gl/MXQi3ZwYfDMHYEyTA", name: "Rose", approximate_age: "2 months old" , sex: "Female", shelter_id: 3, description: "Pitbull", available_for_adoption: "Yes")
+Pet.create(image: "https://static.boredpanda.com/blog/wp-content/uploads/2016/07/smiling-dog-stray-pit-bull-adopted-brinks-14.jpg", name: "Rose", approximate_age: "2 months old" , sex: "Female", shelter_id: 3, description: "Pitbull", available_for_adoption: "Yes")
 
-Pet.create(image: "https://images.app.goo.gl/7nE56Mi1hyuh52W87", name: "Colombiana", approximate_age: "4 months old" , sex: "Female", shelter_id: 4, description: "Pitbull", available_for_adoption: "Yes")
+Pet.create(image: "http://stjoemo.animalshelternet.com/pics/416204-1.jpg", name: "Colombiana", approximate_age: "4 months old" , sex: "Female", shelter_id: 4, description: "Pitbull", available_for_adoption: "Yes")
+
+Pet.create(image: "https://www.rover.com/blog/wp-content/uploads/2015/10/pittie-smile.jpg", name: "Belle", approximate_age: "1 year old" , sex: "Female", shelter_id: 4, description: "Pitbull", available_for_adoption: "Yes")
