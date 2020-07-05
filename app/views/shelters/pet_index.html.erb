@@ -1,18 +1,28 @@
 <h1>Available Pets</h1>
 <h2><%= @shelter.name %></h2>
+<h3><%= link_to "View All Pets", "/pets" %></h3>
+<h3><%= link_to "View All Shelters", "/shelters" %></h3>
 
 <ul id="pets-index">
   <% @pets.each do |pet| %>
     <% if pet.shelter_id == @shelter.id %>
+      <%= link_to "Create Pet", "/shelters/#{pet.shelter.id}/pets/new", method: "get", action: "new" %>
+      <br>
+      <br>
       <%= image_tag(pet.image, id: "pet-image-#{pet.id}") %>
-      <%= pet.name %>
-      <%= pet.description %>
-      <%= pet.approximate_age %>
-      <%= pet.sex %>
-      <%= "Shelter: #{pet.shelter.name}" %>
+      <br>
+      <h2>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>
+      <br>
+      <h4>Description: <%= pet.description %></h4>
+      <br>
+      <h4>Approximate Age: <%= pet.approximate_age %></h4>
+      <br>
+      <h4>Sex: <%= pet.sex %></h4>
+      <br>
+      <%= link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter.id}" %>
+      <p><%= link_to "Edit Pet", "/pets/#{pet.id}/edit" %></p>
+      <p><%= link_to "Delete Pet", "/pets/#{pet.id}", method: :delete %></p>
     <% else %>
     <% end %>
-    <br>
-    <%= link_to "Create Pet", "/shelters/#{pet.shelter.id}/pets/new", method: "get", action: "new" %>
   <% end %>
 </ul>

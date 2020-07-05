@@ -32,6 +32,6 @@ RSpec.describe "pet create page" do
 
     expect(current_path).to eq "/shelters/#{shelter_2.id}/pets"
     expect(page).to have_content("Guapo")
-    expect(page).to have_content(new_pet.adoptable?)
+    expect(page).to have_content(new_pet.available_for_adoption)
   end
 end

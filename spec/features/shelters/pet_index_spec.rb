@@ -9,11 +9,13 @@ RSpec.describe "shelter_pets index page" do
                       name: "Chappelle",
                       approximate_age: "2 years old",
                       sex: "Male",
+                      description: "Pitbull",
                       shelter_id: shelter_2.id)
     pet_2 = Pet.create(image: "https://images.app.goo.gl/MXQi3ZwYfDMHYEyTA",
                       name: "Rose",
                       approximate_age: "2 months old" ,
                       sex: "Female",
+                      description: "Pitbull",
                       shelter_id: shelter_3.id)
 
     visit "/shelters/#{shelter_2.id}/pets"
@@ -22,7 +24,6 @@ RSpec.describe "shelter_pets index page" do
     expect(page).to have_content(pet_1.name)
     expect(page).to have_content(pet_1.approximate_age)
     expect(page).to have_content(pet_1.sex)
-    expect(page).to have_content("Shelter: #{shelter_2.name}")
     expect(page).to_not have_content(pet_2.name)
   end
 end
