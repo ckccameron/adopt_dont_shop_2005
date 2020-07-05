@@ -16,7 +16,7 @@ RSpec.describe "update shelter" do
 
     fill_in :name, with: "Humans Are The Dumb Ones League"
 
-    click_on "Submit"
+    click_on "Update Shelter"
 
     expect(current_path).to eq("/shelters/#{shelter_1.id}")
     expect(page).to have_content("Humans Are The Dumb Ones League")
