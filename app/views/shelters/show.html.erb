@@ -1,5 +1,8 @@
 <h2>Name: <%= link_to "#{@shelter.name}", "/shelters/#{@shelter.id}" %></h2>
 <h3><%= link_to "View All Pets", "/pets" %></h3>
+<h3><%= link_to "View All Shelters", "/shelters" %></h3>
+<br>
+<h3><%= link_to "View All Pets At #{@shelter.name}", "/shelters/#{@shelter.id}/pets" %></h3>
   <p>Address: <%= @shelter.address %></p>
   <p>City: <%= @shelter.city %></p>
   <p>State: <%= @shelter.state %></p>

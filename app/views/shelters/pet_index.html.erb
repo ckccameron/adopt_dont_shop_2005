@@ -1,6 +1,7 @@
 <h1>Available Pets</h1>
 <h2><%= @shelter.name %></h2>
 <h3><%= link_to "View All Pets", "/pets" %></h3>
+<h3><%= link_to "View All Shelters", "/shelters" %></h3>
 
 <ul id="pets-index">
   <% @pets.each do |pet| %>

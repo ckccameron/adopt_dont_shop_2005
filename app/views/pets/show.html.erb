@@ -1,5 +1,6 @@
 <h1><%= link_to "#{@pet.name}", "/pets/#{@pet.id}" %></h1>
 <h3><%= link_to "View All Pets", "/pets" %></h3>
+<h3><%= link_to "View All Shelters", "/shelters" %></h3>
 
  <p><%= image_tag(@pet.image, id: "pet-image-#{@pet.id}") %></p>
  <p>Age: <%= @pet.approximate_age %></p>
