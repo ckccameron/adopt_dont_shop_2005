@@ -16,7 +16,7 @@ RSpec.describe "update pet" do
     expect(page).to have_content(pet_1.name)
 
     click_link "Update Pet"
-    expect(current_path).to eq("/pets/#{pet.id}/edit")
+    expect(current_path).to eq("/pets/#{pet_1.id}/edit")
 
     fill_in :name, with: "Pryor"
     fill_in :approximate_age, with: "3 years old"
