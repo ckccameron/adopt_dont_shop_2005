@@ -4,6 +4,9 @@
 <ul id="pets-index">
   <% @pets.each do |pet| %>
     <% if pet.shelter_id == @shelter.id %>
+      <%= link_to "Create Pet", "/shelters/#{pet.shelter.id}/pets/new", method: "get", action: "new" %>
+      <br>
+      <br>
       <%= image_tag(pet.image, id: "pet-image-#{pet.id}") %>
       <br>
       <%= pet.name %>
@@ -16,9 +19,8 @@
       <br>
       <%= "Shelter: #{pet.shelter.name}" %>
       <p><%= link_to "Edit Pet", "/pets/#{pet.id}/edit" %></p>
+      <p><%= link_to "Delete Pet", "/pets/#{pet.id}", method: :delete %></p>
     <% else %>
     <% end %>
-    <br>
-    <%= link_to "Create Pet", "/shelters/#{pet.shelter.id}/pets/new", method: "get", action: "new" %>
   <% end %>
 </ul>
