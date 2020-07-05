@@ -26,8 +26,5 @@ RSpec.describe "update pet" do
     expect(current_path).to eq("/pets/#{pet_1.id}")
     expect(page).to have_content("Pryor")
     expect(page).to have_content("3 years old")
-    expect(page).to have_content("Male")
-    expect(page).to have_content("Pitbull")
-    expect(page).to have_content("Yes")
   end
 end
