@@ -1,0 +1,18 @@
+<h1>Available Pets</h1>
+<h2><%= @shelter.name %></h2>
+
+<ul id="pets-index">
+  <% @pets.each do |pet| %>
+    <% if pet.shelter_id == @shelter.id %>
+      <%= image_tag(pet.image, id: "pet-image-#{pet.id}") %>
+      <%= pet.name %>
+      <%= pet.description %>
+      <%= pet.approximate_age %>
+      <%= pet.sex %>
+      <%= "Shelter: #{pet.shelter.name}" %>
+    <% else %>
+    <% end %>
+    <br>
+    <%= link_to "Create Pet", "/shelters/#{pet.shelter.id}/pets/new", method: "get", action: "new" %>
+  <% end %>
+</ul>
