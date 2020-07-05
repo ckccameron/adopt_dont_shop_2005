@@ -11,5 +11,7 @@
       <%= "Shelter: #{pet.shelter.name}" %>
     <% else %>
     <% end %>
+    <br>
+    <%= link_to "Create Pet", "/shelters/#{pet.shelter.id}/pets/new" %>
   <% end %>
 </ul>
