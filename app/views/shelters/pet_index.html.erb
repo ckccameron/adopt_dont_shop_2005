@@ -9,13 +9,13 @@
       <br>
       <%= image_tag(pet.image, id: "pet-image-#{pet.id}") %>
       <br>
-      <%= pet.name %>
+      <h2>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>
       <br>
-      <%= pet.description %>
+      <h4>Description: <%= pet.description %></h4>
       <br>
-      <%= pet.approximate_age %>
+      <h4>Approximate Age: <%= pet.approximate_age %></h4>
       <br>
-      <%= pet.sex %>
+      <h4>Sex: <%= pet.sex %></h4>
       <br>
       <%= link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter.id}" %>
       <p><%= link_to "Edit Pet", "/pets/#{pet.id}/edit" %></p>
